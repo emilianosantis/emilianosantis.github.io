@@ -1,0 +1,85 @@
+[
+	{
+	"Tema" : "Clase 1",
+       	 "Pregunta" : "¿Para qué estudiamos los Conceptos y Paradigmas de Cada Lenguaje de Programación?",
+        	"Respuesta": "Para facilitar el diseño e implementación de lenguajes.",
+        	"Incorrecta1": "Porque un lenguaje de Programación sólo puede adoptar un Paradigma ",
+        	"Incorrecta2": "Para  elegir mejor un lenguaje, a la hota de realizar una implementación. ",
+        	"Incorrecta3": "Para Aumentar la capacidad para producir software"
+	},
+	{
+	"Tema" : "Clase 1",
+       	 "Pregunta" : "¿Para poder evaluar los lenguajes de Programación, \n necesitamos criterios de evaluación, y por ende, definir algunos criterios  \n deseables de diseño , marcar que criterios serían deseables",
+        	"Respuesta": "Legibilidad y complejidad",
+        	"Incorrecta1": "Simplicidad ",
+        	"Incorrecta2": "Soporte ",
+        	"Incorrecta3": "Generalidad "
+	},
+	{
+	"Tema" : "Clase 1",
+       	 "Pregunta" : "Indique qué factores ayudan a que los lenguajes de programación sean fáciles de escribir y leer y por ende, aprenderlos.",
+        	"Respuesta": "Misma notación sintáctica para diferentes cosas",
+        	"Incorrecta1": "Abuso de operadores sobrecargados",
+        	"Incorrecta2": "Buena documentación y Soporte  ",
+        	"Incorrecta3": "Muchos componentes elementales"
+	},
+	{
+	"Tema" : "Clase 1",
+       	 "Pregunta" : "Características deseables en los lenguajes ",
+        	"Respuesta": "EE - Eficacia y Eficiencia",
+        	"Incorrecta1": "Perpendicularidad",
+        	"Incorrecta2": "Transparencia",
+        	"Incorrecta3": "Ilegibilidad  "
+	},
+	{
+	"Tema" : "Clase 1",
+       	 "Pregunta" : "Un lenguaje de programación es una ….",
+        	"Respuesta": "Notación formal para describir algoritmos a ser ejecutados en una computadora",
+        	"Incorrecta1": "Forma de comunicarnos con una computadora",
+        	"Incorrecta2": "Conjunción de datos que representan a una bases de datos.",
+        	"Incorrecta3": "Cálculo matemático para la resolución de un planteo"
+	},
+	{
+	"Tema" : "Clase 1",
+			"Pregunta" : "La Ortogonalidad es ….",
+			"Respuesta": "Para un  pequeño número de primitivas, hay un conjunto consistente de reglas de combinación.",
+			"Incorrecta1": "Cada Operación tiene muchos efectos secundarios ",
+			"Incorrecta2": "Solo un pequeño  Conjunto de estructuras de control y datos , puede ser relacionado con componentes principales o constructores primitivos ",
+			"Incorrecta3": "La abstracción de  componentes complejos"
+	},
+	{
+	"Tema" : "Clase 1",
+			"Pregunta" : "¿Que es la Sintaxis?",
+			"Respuesta": "La sintaxis establece reglas que definen cómo deben \ncombinarse las componentes básicas, para formar sentencias y programas",
+			"Incorrecta1": "Conjunto de reglas que definen como componer letras, dígitos y otros caracteres para formar los programas",
+			"Incorrecta2": "Conjunto de reglas para dar significado a los programas sintácticamente válidos.",
+			"Incorrecta3": "se ocupa de estudiar los significados "
+	},
+	{
+	"Tema" : "Indique el tipo de paradigma",
+			"Pregunta" : "el programador instruye a la máquina cómo cambiar su estado, \nprocedimental que agrupa las instrucciones en procedimientos?",
+			"Respuesta": "Imperativo",
+			"Incorrecta1": "Declarativo",
+			"Incorrecta2": "Reactivo",
+			"Incorrecta3": "Conmutativo"
+	},
+	{
+	"Tema" : "Indique el tipo de paradigma",
+			"Pregunta" : "agrupa las instrucciones con la parte del estado en el que operan, \n declarativo en el que el programador simplemente declara las propiedades del resultado deseado, pero no cómo calcularlo",
+			"Respuesta": "Orientado a objetos",
+			"Incorrecta1": "Logico",
+			"Incorrecta2": "Reactivo",
+			"Incorrecta3": "Conmutativo"
+	},
+	{
+	"Tema" : "Indique el tipo de paradigma",
+				"Pregunta" : "en el que el resultado deseado se declara como el valor de una serie de aplicaciones de función",
+				"Respuesta": "Funcional",
+				"Incorrecta1": "Declarativo",
+				"Incorrecta2": "Matematico",
+				"Incorrecta3": "Transitivo"
+		}
+
+	
+
+]

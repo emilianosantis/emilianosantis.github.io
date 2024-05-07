@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Preguntas
+    </title>
+
+</head>
+<body>
+    <style>
+    *{
+        transition: all 0.3s;
+    }
+    
+     body{
+        background-color: rgb(12, 34, 77);
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-size: 120%;
+     }
+
+     .contenedor{
+        width: 98vw;
+        height: 97vh;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+
+    .Encabezado{
+        background: white;
+        min-width: 300px;
+        width: 70%;
+        max-width: 600px;
+        padding: 10px;
+    }
+
+    .Tema{
+        opacity: 0.3;
+        text-align: left};
+
+    .Pregunta{
+        padding: 10px;
+    }
+
+    .btn{
+        background: white;
+        width: 60%;
+        max-width: 550px;
+        padding: 10px;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        transform: scale(1.05);
+    }
+    
+    </style>
+
+    <div class="contenedor">
+        <div class="Encabezado">
+            <div class="Tema" id="tema">
+                Tema
+            </div>
+
+            <div class="Pregunta" id="pregunta">
+                Pregunta
+            </div>
+            
+        </div>
+        
+        <div class="btn" id="btn1" onclick="oprimir_btn(0)">Opción 1</div>
+        <div class="btn" id="btn2" onclick="oprimir_btn(1)">Opción 2</div>
+        <div class="btn" id="btn3" onclick="oprimir_btn(2)">Opción 3</div>
+        <div class="btn" id="btn4" onclick="oprimir_btn(3)">Opción 4</div>
+
+        
+    </div>
+
+    <script>
+
+    let base_preguntas = readText("base-preguntas.json")
+    let interprete_bp = JSON.parse(base_preguntas)
+    let pregunta
+    let posibles_respuestas
+    let btn_correspondiente = [ select_id("btn1"),
+        select_id("btn2"),
+        select_id("btn3"),
+        select_id("btn4")]
+
+    console.log(interprete_bp.length)
+
+    escogerPreguntaAleatoria()
+
+    function escogerPreguntaAleatoria() {
+        escogerPregunta(Math.floor(Math.random()* interprete_bp.length))
+    }
+ 
+    function escogerPregunta(n) {
+        pregunta = interprete_bp[n]
+        select_id("tema").innerHTML = pregunta.Tema
+        select_id("pregunta").innerHTML = pregunta.Pregunta
+        desordenarRespuestas(pregunta)
+     }
+
+     let btns = [
+        select_id("btn1"),
+        select_id("btn2"),
+        select_id("btn3"),
+        select_id("btn4")
+     ]
+
+     function desordenarRespuestas(pregunta) {
+        posibles_respuestas  = [
+            pregunta.Respuesta,
+            pregunta.Incorrecta1,
+            pregunta.Incorrecta2,
+            pregunta.Incorrecta3
+        ]
+        posibles_respuestas.sort(() => Math.random() -0.5)
+
+        select_id("btn1").innerHTML = posibles_respuestas[0]
+        select_id("btn2").innerHTML = posibles_respuestas[1]
+        select_id("btn3").innerHTML = posibles_respuestas[2]
+        select_id("btn4").innerHTML = posibles_respuestas[3]
+     }
+
+     function oprimir_btn(i) {
+        if (posibles_respuestas[i] == pregunta.Respuesta){
+            btn_correspondiente[i].style.background = "lightgreen"
+        } else{
+            btn_correspondiente[i].style.background = "pink"  
+        }
+        setTimeout (() => {
+            reiniciar()
+        }, 300)
+     }
+
+     function reiniciar() {
+        for (const btn of btn_correspondiente) {
+            btn.style.background = "white"
+        }
+        escogerPreguntaAleatoria()
+     }
+
+    function select_id(id) {
+        return document.getElementById(id)
+       }
+
+    function style(id) {
+        return select_id(id).style
+       }
+
+    function readText(ruta_local) {
+        var texto = null;
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", ruta_local, false);
+        xmlhttp.send();
+        if (xmlhttp.status == 200) {
+            texto = xmlhttp.responseText;
+        }
+        return texto
+       }
+    </script>
+    
+</body>
+</html>
