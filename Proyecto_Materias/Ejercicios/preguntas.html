@@ -7,6 +7,8 @@
         Preguntas
     </title>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.all.min.js"></script>
+
 </head>
 <body>
     <style>
@@ -20,6 +22,10 @@
         margin: 0;
         text-align: center;
         font-size: 120%;
+        background-image: url(https://i.gifer.com/J4o.gif);
+        /* background-repeat: no-repeat; */
+        /* background-size: cover; */
+        background-position: center center;
      }
 
      .contenedor{
@@ -32,19 +38,28 @@
      }
 
     .Encabezado{
-        background: white;
+        background: rgb(255, 253, 253);
         min-width: 300px;
-        width: 70%;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
         max-width: 600px;
         padding: 10px;
+        font-family:  "Trebuchet MS", Verdana, sans-serif;
+        box-shadow: 0px 0px 20px 1px #1b4beb;
+        margin: 1rem;
+        border-radius: 15px;
     }
 
     .Tema{
-        opacity: 0.3;
-        text-align: left};
+        opacity: 0.5;
+        text-align: center;
+        color: #4763be;
+    }
 
     .Pregunta{
         padding: 10px;
+       
     }
 
     .btn{
@@ -54,12 +69,15 @@
         padding: 10px;
         margin: 5px;
         cursor: pointer;
+        border-radius: 30px;
+        box-shadow: 0px 0px 20px 1px #1139be;
     }
 
     .btn:hover {
         transform: scale(1.05);
     }
-    
+
+        
     </style>
 
     <div class="contenedor">
@@ -80,10 +98,13 @@
         <div class="btn" id="btn4" onclick="oprimir_btn(3)">Opción 4</div>
 
         
+
+        
     </div>
 
     <script>
-
+    let cantPreguntas = 0
+    let puntaje = 0
     let base_preguntas = readText("base-preguntas.json")
     let interprete_bp = JSON.parse(base_preguntas)
     let pregunta
@@ -92,8 +113,6 @@
         select_id("btn2"),
         select_id("btn3"),
         select_id("btn4")]
-
-    console.log(interprete_bp.length)
 
     escogerPreguntaAleatoria()
 
@@ -133,12 +152,25 @@
      function oprimir_btn(i) {
         if (posibles_respuestas[i] == pregunta.Respuesta){
             btn_correspondiente[i].style.background = "lightgreen"
+            puntaje++;
         } else{
             btn_correspondiente[i].style.background = "pink"  
         }
         setTimeout (() => {
             reiniciar()
         }, 300)
+
+        cantPreguntas++;
+        console.log(cantPreguntas)
+
+        if (cantPreguntas == 10) {
+            Swal.fire({
+            title: "Juego términado",
+             text: `Tu puntaje fue de: ${puntaje}`,
+             });
+            cantPreguntas = 0;
+            puntaje = 0
+        }
      }
 
      function reiniciar() {
