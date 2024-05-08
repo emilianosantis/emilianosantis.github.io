@@ -9,7 +9,7 @@
 	},
 	{
 	"Tema" : "Clase 1",
-       	 "Pregunta" : "¿Para poder evaluar los lenguajes de Programación, \n necesitamos criterios de evaluación, y por ende, definir algunos criterios  \n deseables de diseño , marcar que criterios serían deseables",
+       	 "Pregunta" : "Para poder evaluar los lenguajes de Programación, \n necesitamos criterios de evaluación, y por ende, definir algunos criterios  \n deseables de diseño , marcar que criterios serían deseables",
         	"Respuesta": "Legibilidad y complejidad",
         	"Incorrecta1": "Simplicidad ",
         	"Incorrecta2": "Soporte ",
@@ -51,13 +51,21 @@
 	"Tema" : "Clase 1",
 			"Pregunta" : "¿Que es la Sintaxis?",
 			"Respuesta": "La sintaxis establece reglas que definen cómo deben \ncombinarse las componentes básicas, para formar sentencias y programas",
-			"Incorrecta1": "Conjunto de reglas que definen como componer letras, dígitos y otros caracteres para formar los programas",
+			"Incorrecta1": "Permite conocer el significado de los lenguajes de programación \n y cómo pueden surgir operaciones no deseadas",
 			"Incorrecta2": "Conjunto de reglas para dar significado a los programas sintácticamente válidos.",
 			"Incorrecta3": "se ocupa de estudiar los significados "
 	},
 	{
+	"Tema" : "Clase 1",
+			"Pregunta" : "¿Que es la Semántica?",
+			"Respuesta": "Conjunto de reglas para dar significado a los programas sintácticamente válidos. ",
+			"Incorrecta1": "Conjunto de reglas que definen como componer letras, dígitos y otros caracteres para formar los programas  ",
+			"Incorrecta2": "La semántica establece reglas que definen cómo deben \ncombinarse las componentes básicas, para formar sentencias y programas",
+			"Incorrecta3": "se ocupa de estudiar los significados "
+	},
+	{
 	"Tema" : "Indique el tipo de paradigma",
-			"Pregunta" : "el programador instruye a la máquina cómo cambiar su estado, \nprocedimental que agrupa las instrucciones en procedimientos?",
+			"Pregunta" : "El programador instruye a la máquina cómo cambiar su estado, \nprocedimental que agrupa las instrucciones en procedimientos?",
 			"Respuesta": "Imperativo",
 			"Incorrecta1": "Declarativo",
 			"Incorrecta2": "Reactivo",
@@ -65,7 +73,7 @@
 	},
 	{
 	"Tema" : "Indique el tipo de paradigma",
-			"Pregunta" : "agrupa las instrucciones con la parte del estado en el que operan, \n declarativo en el que el programador simplemente declara las propiedades del resultado deseado, pero no cómo calcularlo",
+			"Pregunta" : "Agrupa las instrucciones con la parte del estado en el que operan, \n declarativo en el que el programador simplemente declara las propiedades del resultado deseado, pero no cómo calcularlo",
 			"Respuesta": "Orientado a objetos",
 			"Incorrecta1": "Logico",
 			"Incorrecta2": "Reactivo",
@@ -73,12 +81,141 @@
 	},
 	{
 	"Tema" : "Indique el tipo de paradigma",
-				"Pregunta" : "en el que el resultado deseado se declara como el valor de una serie de aplicaciones de función",
-				"Respuesta": "Funcional",
-				"Incorrecta1": "Declarativo",
-				"Incorrecta2": "Matematico",
-				"Incorrecta3": "Transitivo"
-		}
+			"Pregunta" : "En el que el resultado deseado se declara como el valor de una serie de aplicaciones de función",
+			"Respuesta": "Funcional",
+			"Incorrecta1": "Declarativo",
+			"Incorrecta2": "Matematico",
+			"Incorrecta3": "Transitivo"
+	},
+	{
+	"Tema" : "Tipo de Sitaxis",
+			"Pregunta" : "¿Cual Se refiere básicamente a la estructura?",
+			"Respuesta": "Abstracta",
+			"Incorrecta1": "Pramática",
+			"Incorrecta2": "Concreta",
+			"Incorrecta3": "Operativa"
+	},
+	{
+	"Tema" : "Tipo de Sitaxis",
+			"Pregunta" : "¿Cual Se refiere básicamente a la parte léxica?",
+			"Respuesta": "Concreta",
+			"Incorrecta1": "Pragmatica",
+			"Incorrecta2": "Axiomática",
+			"Incorrecta3": "Denotacional"
+	},
+	{
+	"Tema" : "Tipo de Sitaxis",
+			"Pregunta" : "¿Cual Se refiere básicamente al uso práctico?",
+			"Respuesta": "Pragmática",
+			"Incorrecta1": "Abstracta",
+			"Incorrecta2": "Concreta",
+			"Incorrecta3": "Axiomática"
+	},
+	{
+	"Tema" : "Tipos de Semántica",
+			"Pregunta" : "No está relacionado con el signficado del programa, \n está relacionado con las formas validas.",
+			"Respuesta": "Estática",
+			"Incorrecta1": "Dinámica",
+			"Incorrecta2": "Axiomática",
+			"Incorrecta3": "Denotacional"
+	},
+	{
+	"Tema" : "Tipos de Semántica",
+			"Pregunta" : "Es la que describe el efecto de ejecutar las diferentes \n construcciones en el lenguaje de programación",
+			"Respuesta": "Dinámica",
+			"Incorrecta1": "Denotacional",
+			"Incorrecta2": "Estática",
+			"Incorrecta3": "Axiomática"
+	},
+	{
+	"Tema" : "Tipos de Semántica",
+			"Pregunta" : "Considera al programa como una 'maquina de estados'",
+			"Respuesta": "Axiomática",
+			"Incorrecta1": "Estática",
+			"Incorrecta2": "Dinámica",
+			"Incorrecta3": "Denotacional"
+	},
+	{
+	"Tema" : "Tipos de Semántica",
+			"Pregunta" : "Se basa en la teoría de funciones recursivas",
+			"Respuesta": "Denotacional",
+			"Incorrecta1": "Operacional",
+			"Incorrecta2": "Dinámica",
+			"Incorrecta3": "Axiomática"
+	},
+	{
+	"Tema" : "Tipos de Semántica",
+			"Pregunta" : "El significado de un programa se describe mediante otro lenguaje \n de bajo nivel implementado en una maquina abstracta",
+			"Respuesta": "Operacional",
+			"Incorrecta1": "Axiomática",
+			"Incorrecta2": "Dinámica",
+			"Incorrecta3": "Denotacional"
+	},
+	{
+	"Tema" : "Tipos de Semántica",
+			"Pregunta" : "Describe los estados a través de las funciones",
+			"Respuesta": "Denotacional",
+			"Incorrecta1": "Axiomática",
+			"Incorrecta2": "Operacional",
+			"Incorrecta3": "Dinámica"
+	},
+	{
+	"Tema" : "Tipos de Semántica",
+			"Pregunta" : "Describe los estados a través de los predicados",
+			"Respuesta": "Axiomática",
+			"Incorrecta1": "Denotacional",
+			"Incorrecta2": "Dinámica",
+			"Incorrecta3": "Operacional"
+	},
+	{
+	"Tema" : "Procesamiento de un lenguaje",
+			"Pregunta" : "Lee, analiza, decodifica y ejecuta una a una \n las sentencias de un programa escrito en un lenguaje de programación.",
+			"Respuesta": "Intérprete",
+			"Incorrecta1": "Compilador",
+			"Incorrecta2": "Macro",
+			"Incorrecta3": "Assembler"
+	},
+	{
+	"Tema" : "Procesamiento de un lenguaje",
+			"Pregunta" : "Los programas escritos en un lenguaje de alto nivel se traducen a una versión en lenguaje de máquina antes de ser ejecutados.",
+			"Respuesta": "Compilador",
+			"Incorrecta1": "Intérprete",
+			"Incorrecta2": "Macro",
+			"Incorrecta3": "AST"
+	},
+	{
+	"Tema" : "Procesamiento de un lenguaje",
+			"Pregunta" : "¿En que forma ejecuta un interprete?",
+			"Respuesta": "Ejecuta el programa de entrada directamente",
+			"Incorrecta1": "roduce un programa equivalente en lenguaje objeto",
+			"Incorrecta2": "Programa en forma reubicable con la tabla de datos",
+			"Incorrecta3": "No repetir lazos, se decodifica una sola vez"
+	},
+	{
+	"Tema" : "Procesamiento de un lenguaje",
+			"Pregunta" : "¿En que forma ejecuta un compilador?",
+			"Respuesta": "Produce un programa equivalente en lenguaje objeto",
+			"Incorrecta1": "Ejecuta el programa de entrada directamente",
+			"Incorrecta2": "Programa en forma reubicable con la tabla de datos",
+			"Incorrecta3": "Por cada sentencia se realiza el proceso de decodificación para determinar las \n operaciones a ejecutar y sus operandos"
+	},
+	{
+	"Tema" : "Procesamiento de un lenguaje",
+			"Pregunta" : "Análisis semántica(semántica estática)",
+			"Respuesta": "Es la fase medular y la mas importante, tambien es el nexo entre análisis y la síntesis",
+			"Incorrecta1": "Aplica una gramática para construir el árbol sintáctico del programa",
+			"Incorrecta2":"Hace el análisis a nivel de palabra y es el que lleva mas tiempo",
+			"Incorrecta3": "En esta etapa se construye el programa ejecutable"
+	},
+	{
+	"Tema" : "",
+			"Pregunta" : "",
+			"Respuesta": "",
+			"Incorrecta1": "",
+			"Incorrecta2": "",
+			"Incorrecta3": ""
+	}
+
 
 	
 
