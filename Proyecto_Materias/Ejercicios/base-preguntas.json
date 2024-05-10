@@ -208,6 +208,78 @@
 			"Incorrecta3": "En esta etapa se construye el programa ejecutable"
 	},
 	{
+	"Tema" : "Semántica Operacional",
+			"Pregunta" : "¿Que es la ligadura?",
+			"Respuesta": "Es la asociación entre la entidad y el atributo",
+			"Incorrecta1": "Es una secuencia de pasos computacionales que transforma la entrada en salida",
+			"Incorrecta2": "hace referencia a problemas en los cuales, dicho problema es parte de la solución",
+			"Incorrecta3": "Es una técnica de normalización para reducir dimensionalidad del documento"
+	},
+	{
+	"Tema" : "Semántica Operacional",
+			"Pregunta" : "L-value",
+			"Respuesta": "Es el lugar de la memoria asociado con la variable(tiempo de vida)",
+			"Incorrecta1": "Es el valor codificado almacenado en la ubicación de la variable",
+			"Incorrecta2": "Es el rango de instrucciones en el que se conoce el nombre(visibilidad)",
+			"Incorrecta3": "Valores y operaciones"
+	},
+	{
+	"Tema" : "Semántica Operacional",
+			"Pregunta" : "R-Value",
+			"Respuesta": "Es el valor codificado almacenado en la ubicación de la variable",
+			"Incorrecta1": "Es el lugar de la memoria asociado con la variable(tiempo de vida)",
+			"Incorrecta2": "Es el rango de instrucciones en el que se conoce el nombre",
+			"Incorrecta3": "Valores y operaciones"
+	},
+	{
+	"Tema" : "Semántica Operacional",
+			"Pregunta" : "Alcance",
+			"Respuesta": "Es el rango de instrucciones en el que se conoce el nombre",
+			"Incorrecta1": "Valores y operaciones",
+			"Incorrecta2": "Es el lugar de la memoria asociado con la variable(tiempo de vida)",
+			"Incorrecta3": "Es el valor codificado almacenado en la ubicación de la variable"
+	},
+	{
+	"Tema" : "Semántica Operacional",
+			"Pregunta" : "Tipo",
+			"Respuesta": "Valores y operaciones",
+			"Incorrecta1": "Es el rango de instrucciones en el que se conoce el nombre(visibilidad)",
+			"Incorrecta2": "Es el lugar de la memoria asociado con la variable(tiempo de vida)",
+			"Incorrecta3": "Es el valor codificado almacenado en la ubicación de la variable"
+	},
+	{
+	"Tema" : "Conceptos asociados con el alcance",
+			"Pregunta" : "Son todas las referencias que se han creado dentro de programa o subprograma",
+			"Respuesta": "Local",
+			"Incorrecta1": "Global",
+			"Incorrecta2": "No local",
+			"Incorrecta3": "Performativo"
+	},
+	{
+	"Tema" : "Conceptos asociados con el alcance",
+			"Pregunta" : "Son todas las referencias creadas en el programa principañ",
+			"Respuesta": "Global",
+			"Incorrecta1": "Local",
+			"Incorrecta2":"No local",
+			"Incorrecta3": "Distributiva"
+	},
+	{
+	"Tema" : "Conceptos asociados con el alcance",
+			"Pregunta" : "Son todas las referncias que se utilizan dentro del subprograma pero que han sido creadas en él",
+			"Respuesta": "No local",
+			"Incorrecta1": "Global",
+			"Incorrecta2": "Local",
+			"Incorrecta3": "Imperativa"
+	},
+	{
+	"Tema" : "",
+			"Pregunta" : "",
+			"Respuesta": "",
+			"Incorrecta1": "",
+			"Incorrecta2": "",
+			"Incorrecta3": ""
+	},
+	{
 	"Tema" : "",
 			"Pregunta" : "",
 			"Respuesta": "",
