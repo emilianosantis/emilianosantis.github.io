@@ -273,11 +273,11 @@
 	},
 	{
 	"Tema" : "",
-			"Pregunta" : "",
-			"Respuesta": "",
-			"Incorrecta1": "",
-			"Incorrecta2": "",
-			"Incorrecta3": ""
+			"Pregunta" : "USTED QUIERE APROBAR LA MATERIA",
+			"Respuesta": "SI QUIERO",
+			"Incorrecta1": "NO PUEDO",
+			"Incorrecta2": "NO SE TENGO MIEDO",
+			"Incorrecta3": "DEPENDE"
 	},
 	{
 	"Tema" : "",
