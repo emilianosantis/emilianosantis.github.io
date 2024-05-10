@@ -265,7 +265,7 @@
 	},
 	{
 	"Tema" : "Conceptos asociados con el alcance",
-			"Pregunta" : "Son todas las referncias que se utilizan dentro del subprograma pero que han sido creadas en él",
+			"Pregunta" : "Son todas las referncias que se utilizan dentro del subprograma pero que no han sido creadas en él",
 			"Respuesta": "No local",
 			"Incorrecta1": "Global",
 			"Incorrecta2": "Local",
