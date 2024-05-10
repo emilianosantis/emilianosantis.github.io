@@ -164,10 +164,18 @@
         console.log(cantPreguntas)
 
         if (cantPreguntas == 10) {
+           
+         if(puntaje < 4 )
             Swal.fire({
-            title: "Juego términado",
-             text: `Tu puntaje fue de: ${puntaje}`,
+            title: "Usted no ha aprobado la materia",
+            text: `Tu puntaje fue de: ${puntaje}`,
              });
+         else {
+            Swal.fire({
+            title: "Usted ha aprobado la materia",
+            text: `Tu puntaje fue de: ${puntaje}`,
+             });
+         }    
             cantPreguntas = 0;
             puntaje = 0
         }
