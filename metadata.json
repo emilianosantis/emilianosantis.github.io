@@ -1,0 +1,8 @@
+{
+  "name": "Data Engineering & LLMOps Portfolio",
+  "description": "Portfolio profesional enfocado en Data Engineering, Pipelines ETL/ELT, Bases de Datos Vectoriales y preparación de infraestructura para LLMOps.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
