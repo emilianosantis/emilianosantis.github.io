@@ -1,0 +1,448 @@
+/* --------------------------------- Info útil -------------------------------------------------*/
+
+/* font-family: 'Montserrat', sans-serif; weight: 400, 500, 600 (encabezado)
+   font-family: 'Open Sans', sans-serif; weight: 300, 400, 500  (resto de la página)
+   colores: blanco #fffcf2 - azul #003554 - verde #077861 - gris (parrafo) #121f27 - gris (banner) #c0c0c0 */
+
+
+/* ----------------------------------------- Estilos Generales ------------------------------ */
+
+body {
+    margin: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #fffcf2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; 
+    }
+
+    h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: #df8107;
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+        color: #121f27;
+    }
+
+    .Boton_ejercicio {
+        color: white;
+        cursor: pointer;
+        background-color: #df8107;
+        
+        text-decoration:none;
+        font-weight: 400;
+        font-size: 20px;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left:30px;
+        padding-right:30px;
+        border-color: #ceb68a;
+        border-width: 3px;
+        border-style: solid;
+        border-radius:35px;
+        }
+
+    /* -------------------------------------- Estilos del Header ------------------------------------- */
+
+
+    .header {
+        grid-area: header;
+    }
+
+    /* .header-top {
+        background-color: #077861;
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+        padding-right: 2%;
+    } */
+
+    /* .admin {
+        width: 10%;
+        font-size: 1.5rem;
+        padding-left: 2%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+    } */
+    
+    /* .info-institucion-header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        list-style-type: none;
+        width: 90%;
+        margin: 0%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-right: 3%;
+        gap: 2%;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 0.9rem;
+        color: #fffcf2;
+    } */
+    
+    /* .info-institucion-header a {
+        text-decoration: none;
+        font-size: 0.9rem;
+    } */
+    
+    .header-bottom {
+        display: flex;
+        background-color: #fffcf2;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 2%;
+        gap: 1%;
+    }
+    
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #df8107;
+        font-size: 4vw;
+    }
+    
+    h1 span {
+        font-weight: 400;
+    }
+    
+    .logo {
+        width: 8vw;
+    }
+
+/* ----------------------------------- Estilos de la Barra de Navegación ---------------------------- */
+
+.nav-bar {
+    background-color: #df8107;
+    position: sticky;
+    z-index: 2000;
+    top: 0;
+    padding-right: 3%;
+    grid-area: nav-bar;
+    padding-left: 1%;
+}
+
+.menu {
+    margin: 0%;
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    gap: 1%;
+}
+
+.menu li {
+    padding: 1%;
+    border: 1px solid #df8107;
+    text-align: center;
+    align-self: center;
+}
+
+.menu li:first-child {
+    background-color: #fffcf2;
+    border: 1px solid #fffcf2;
+    border-radius: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fffcf2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.menu li:first-child a {
+    color: #003554;
+}
+
+.menu li:hover {
+    background-color: #fffcf2;
+    border: 1px solid #fffcf2;
+    border-radius: 30px;
+}
+
+.menu li:hover a {
+    color: #df8107;
+}
+
+/* ------------------------------------------- Estilos del Banner de sección -------------------------------------- */
+
+.banner {
+    grid-area: banner;
+    background: linear-gradient(0deg, #7e6e2ad9 0%, #154e6ed9 60%), url(../img/prog-img.jpg);
+    background-size: cover;
+    background-position-y: 33%;
+}
+
+.banner h2 {
+    padding-left: 5%;
+    padding-top: 1%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #df8107;
+}
+
+.banner h4 {
+    color: #c0c0c0;
+    border: none;
+    text-align: start;
+    padding-left: 5%;
+    padding-top: 0.5%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+/* ------------------------------------------- Estilos del Footer --------------------------------------------- */
+
+.footer {
+    grid-area: footer;
+    background-color: #df8107;
+    display: flex;
+}
+
+footer>div {
+    width: 100%;
+}
+
+.footer-top {
+    display: flex;
+}
+
+.contenedor-redes {
+    width: 50%;
+}
+
+.lista-redes {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+    gap: 3%;
+}
+
+.redes {
+    padding: 1.5%;
+    border: 1px solid #df8107;
+}
+
+.redes a {
+    font-size: 1rem;
+    color: #fffcf2;
+}
+
+.contenedor-info {
+    width: 50%;
+    padding-right: 2%;
+}
+
+.info-institucion-footer {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    gap: 3%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.info-institucion-footer li {
+    display: flex;
+    gap: 1vw;
+    padding: 2%;
+    color: #fffcf2;
+}
+
+.info-institucion-footer i {
+    font-size: 1.2rem;
+}
+
+.info-institucion-footer a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.footer-bottom a {
+    text-align: center;
+    margin: 1em 0 1em 0;
+    text-decoration: none; 
+}
+
+.footer-bottom p, a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #fffcf2;
+    font-size: 0.85rem;
+}
+
+/* --------------------------------------------- Secciones grid cuerpo principal ----------------------------------------------- */
+
+.section-2 {
+    grid-area: section-2;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 20px 1px #df8107;
+}
+
+.section-3 {
+    grid-area: section-3;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 20px 1px #df8107;
+}
+
+.section-4 {
+    grid-area: section-4;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 20px 1px #df8107;
+}
+
+.section-5 {
+    grid-area: section-5;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 20px 1px #df8107;
+}
+
+.section-6 {
+    grid-area: section-6;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 20px 1px #df8107;
+
+    
+}
+
+/* ------------------------------------ Diseño grid y media queries gral/index ---------------------------------------- */
+
+@media only screen and (min-width: 1199px) {
+    .contenedor-grid {
+        display: grid;
+        grid-template: auto auto 25vh auto auto auto auto/ 3fr 1fr;
+        grid-template-areas: "header header"
+            "nav-bar nav-bar"
+            "banner banner"
+            "section-2 section-3"
+            "section-4 section-5"
+            "section-6 section-6"
+            "footer footer";
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1199px) {
+    .contenedor-grid {
+        display: grid;
+        grid-template: auto auto auto auto auto auto auto auto/ 1fr 1fr;
+        grid-template-areas: "header header "
+            "nav-bar nav-bar "
+            "banner banner"
+            "section-2 section-2"
+            "section-3 section-5"
+            "section-4 section-4"
+            "section-6 section-6"
+            "footer footer";
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .contenedor-grid {
+        display: grid;
+        grid-template: auto auto auto auto auto auto auto auto auto/ 1fr;
+        grid-template-areas: "header"
+            "nav-bar"
+            "banner"
+            "section-2"
+            "section-3"
+            "section-4"
+            "section-5"
+            "section-6"
+            "footer";
+    }
+
+    /* .admin {
+        width: 10%;
+        font-size: 1.2rem;
+        padding-left: 2%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+    } */
+
+    h1 { 
+        font-size: 6vw;}
+
+    h1 span {
+        display: none;
+    }
+
+    /* .logo {
+        width: 12vw;
+    } */
+
+    /* .nav-bar {
+        padding: 0;
+    } */
+
+    /* .menu {
+        flex-direction: column;
+        justify-content: center;
+        padding: 3% 0%;
+    } */
+
+    /* .menu li {
+        width: 100%;
+        padding: 1% 0%;
+        border: 1px solid #003554;
+        text-align: center;
+        align-self: center;
+    } */
+    
+    /* .menu li:first-child {
+        background-color: #fffcf2;
+        border: 1px solid #fffcf2;
+        border-radius: 0px;
+    } */
+
+    /* .menu li:hover {
+        background-color: #fffcf2;
+        border: 1px solid #fffcf2;
+        border-radius: 0px;
+    } */
+    
+    /* .menu li:hover a {
+        color: #003554;
+    } */
+
+    .footer-top {
+        flex-direction: column;
+    }
+
+    /* .contenedor-redes, .contenedor-info {
+        width: 100%;
+    } */
+
+    .lista-redes, .info-institucion-footer {
+        padding-left: 0%;
+        justify-content: center;
+    }
+    
+}

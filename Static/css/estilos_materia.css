@@ -1,0 +1,126 @@
+.section-7 {
+    grid-area: section-7;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 20px 1px #df8107;
+}
+
+.section-2 h2, .section-3 h2, .section-4 h2, 
+.section-5 h2, .section-6 h2, .section-7 h2 {
+    position: relative;
+}
+
+.section-2 h2::after, .section-3 h2::after,
+.section-4 h2::after, .section-5 h2::after, 
+.section-6 h2::after, .section-7 h2::after {
+    content: "";
+    bottom: -10px;
+    background: #df8107;
+    height: 10%;
+    left: 0;
+    position: absolute;
+    width: 50px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .contenedor-grid {
+        display: grid;
+        grid-template: auto auto 25vh auto auto auto auto/ 2fr 1fr;
+        grid-template-areas: "header header"
+                            "nav-bar nav-bar"
+                            "banner banner"
+                            "section-2 section-3"
+                            "section-4 section-5"
+                            "section-6 section-7"
+                            "footer footer";
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+    .contenedor-grid {
+        display: grid;
+        grid-template: auto auto auto auto auto auto auto/ 1.75fr 1fr;
+        grid-template-areas: "header header "
+                            "nav-bar nav-bar "
+                            "banner banner"
+                            "section-2 section-3"
+                            "section-4 section-5"
+                            "section-6 section-7"
+                            "footer footer";
+                    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .contenedor-grid {
+        display: grid;
+        grid-template: auto auto auto auto auto auto auto auto auto auto/ 1fr;
+        grid-template-areas: "header"
+                            "nav-bar"
+                            "banner"
+                            "section-2"
+                            "section-3"
+                            "section-4"
+                            "section-5"
+                            "section-6"
+                            "section-7"
+                            "footer";
+                    }
+
+    h1 { 
+        font-size: 6vw;}
+
+    h1 span {
+        display: none;
+    }
+
+    .logo {
+        width: 12vw;
+    }
+
+    .nav-bar {
+        padding: 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        padding: 3% 0%;
+    }
+
+    .menu li {
+        width: 100%;
+        padding: 1% 0%;
+        border: 1px solid #df8107;
+        text-align: center;
+        align-self: center;
+    }
+    
+    .menu li:first-child {
+        background-color: #fffcf2;
+        border: 1px solid #fffcf2;
+        border-radius: 0px;
+    }
+
+    .menu li:hover {
+        background-color: #fffcf2;
+        border: 1px solid #fffcf2;
+        border-radius: 0px;
+    }
+    
+    .menu li:hover a {
+        color: #003554;
+    }
+
+    .footer-top {
+        flex-direction: column;
+    }
+
+    .contenedor-redes, .contenedor-info {
+        width: 100%;
+    }
+
+    .lista-redes, .info-institucion-footer {
+        padding-left: 0%;
+        justify-content: center;
+    }   
+}
